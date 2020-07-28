@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>猫猫工坊</title>
+  <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header><a href="https://www.neko-craft.com">猫猫工坊</a></header>
+  <main>
+    <div id="content">
+      <section id="cards">
+        <div class="card">
+          <img src="assets/1.jpg" />
+          <p>
+            这是我的第一只猫 (名叫Neko), 他陪伴了我的童年. 从我七岁开始他就已经在陪着我玩, 然而在漫长的人生中, 他最终还是离我而去. 但我永远也忘不了他的存在.
+          </p>
+        </div>
+        <div class="card">
+          <img src="assets/2.jpg" />
+          <p>
+            这是我的最好的一个小学同学的猫, 它也十分可爱, 小时候每次聚餐时, 同学总是带上它和我们一起玩.
+          </p>
+        </div>
+        <div class="card">
+          <img src="assets/3.jpg" />
+          <p>
+            这是我现在的小宝贝 (名叫Craft), 她是我的唯一. 每当我悲伤痛苦之时, 她总能带给我心灵上的慰藉.
+          </p>
+        </div>
+        <div class="card">
+          <img src="assets/4.jpg" />
+          <p>
+            上次旅行时, 我在一间农家乐时偶然间遇到了这只可爱的小猫咪, 我赶紧拿起相机拍摄了下来. 可惜它还是立即逃走了.
+          </p>
+        </div>
+        <div class="card">
+          <img src="assets/5.jpg" />
+          <p>
+            朋友的小宠物2
+          </p>
+        </div>
+        <div class="card">
+          <img src="assets/6.jpg" />
+          <p>
+            可爱的猫猫
+          </p>
+        </div>
+        <div class="card">
+          <img id="random" />
+          <p>
+            随机猫猫
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+  <hr>
+  <footer>
+    <p>如果你也喜欢猫猫, 不妨向我投稿, 邮箱地址: emailisnotexists@gmail.com</p>
+    <a href="http://www.beian.miit.gov.cn" target="_blank">桂ICP备20005600号-1</a>
+    <span class="copy">Copyright &copy; 2020 Shirasawa All rights reserved.</span>
+  </footer>
+  <script>
+    document.getElementById('random').src = 'https://d2ph5fj80uercy.cloudfront.net/0' +
+      (4 + Math.floor(Math.random() * 2)) + '/cat' + (Math.floor(Math.random() * 5000) + 1) + '.jpg'
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+name: Deploy
+
+on: push
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out git repository
+        uses: actions/checkout@v1
+
+      - name: Deploy
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v1
+        with:
+          build_dir: dist
+          committer_email: 764798966@qq.com
+          fqdn: www.neko-craft.com
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
