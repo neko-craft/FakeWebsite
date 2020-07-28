@@ -1,4 +1,4 @@
-# FakeWebsite ![Deploy](https://github.com/neko-craft/FakeWebsite/workflows/Deploy/badge.svg)
+# FakeWebsite
 
 ## Preview
 
